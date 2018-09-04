@@ -5271,9 +5271,6 @@
     .line 2330
     :cond_19
     :goto_7
-<<<<<<< VENDOR #Conflict 0
-    if-eqz p1, :cond_1b
-======= #@.method private resumeTopActivityInnerLocked@
 
     move-object/from16 v0, p0
 
@@ -5291,8 +5288,8 @@
 
     :cond_flyme_0
 
-    if-eqz p1, :cond_1a
->>>>>>> BOSP #Conflict 0
+
+    if-eqz p1, :cond_1b
 
     move-object/from16 v0, p1
 

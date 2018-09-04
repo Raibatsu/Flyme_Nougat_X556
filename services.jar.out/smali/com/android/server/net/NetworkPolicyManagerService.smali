@@ -6025,17 +6025,13 @@
 
     or-int v5, v4, v9
 
-<<<<<<< VENDOR #Conflict 0
     .local v5, "newUidRules":I
     if-nez v5, :cond_c
-======= #@.method private updateRulesForDataUsageRestrictionsUL@
-    .local v4, "newUidRules":I
     invoke-static {p0, p1, v4}, Lcom/android/server/net/NetworkPolicyManagerService$FlymeInjector;->updateFlymeRules(Lcom/android/server/net/NetworkPolicyManagerService;II)I
 
-    move-result v4
+    move-result v5
 
-    if-nez v4, :cond_a
->>>>>>> BOSP #Conflict 0
+    if-nez v5, :cond_c
 
     iget-object v9, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mUidRules:Landroid/util/SparseIntArray;
 

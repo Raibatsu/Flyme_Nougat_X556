@@ -3,25 +3,15 @@
 .source "SystemServer.java"
 
 
-<<<<<<< VENDOR #Conflict 0
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/android/server/SystemServer$AdbPortObserver;
+           Lcom/android/server/SystemServer$FlymeInjector;
     }
 .end annotation
 
 
-=======
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/android/server/SystemServer$FlymeInjector;
-    }
-.end annotation
-
-
->>>>>>> BOSP #Conflict 0
 # static fields
 .field private static final ACCOUNT_SERVICE_CLASS:Ljava/lang/String; = "com.android.server.accounts.AccountManagerService$Lifecycle"
 
@@ -2323,11 +2313,8 @@
 
     .line 830
     :try_start_b
-<<<<<<< VENDOR #Conflict 1
-    new-instance v92, Lcom/android/server/statusbar/StatusBarManagerService;
-======= #@.method private startOtherServices@
-    new-instance v80, Lcom/android/server/statusbar/FlymeExtStatusBarManagerService;
->>>>>>> BOSP #Conflict 1
+    
+    new-instance v92, Lcom/android/server/statusbar/FlymeExtStatusBarManagerService;
 
     move-object/from16 v0, v92
 

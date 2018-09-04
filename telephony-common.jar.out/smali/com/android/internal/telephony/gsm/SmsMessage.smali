@@ -1896,15 +1896,9 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/SmsAddress;
-
-<<<<<<< VENDOR #Conflict 0
-    iget-object v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/SmsAddress;
-======= #@.method private parseSmsSubmit@
     invoke-direct/range {p0 .. p0}, Lcom/android/internal/telephony/gsm/SmsMessage;->setFlymeDestinationAddress()V
 
     iget-object v4, p0, Lcom/android/internal/telephony/gsm/SmsMessage;->mRecipientAddress:Lcom/android/internal/telephony/gsm/GsmSmsAddress;
->>>>>>> BOSP #Conflict 0
 
     if-eqz v4, :cond_0
 

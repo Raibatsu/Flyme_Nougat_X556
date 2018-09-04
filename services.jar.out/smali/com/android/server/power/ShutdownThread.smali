@@ -421,15 +421,10 @@
     :goto_2
     invoke-virtual {v2, v4}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    invoke-virtual {v2}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
-
+    invoke-static/range {p0 .. p0}, Lcom/android/server/power/ShutdownThread$FlymeInjector;->showShutDownAnimation(Landroid/content/Context;)V
+    
     move-result-object v3
 
-<<<<<<< VENDOR #Conflict 0
-    const/16 v4, 0x7d9
-======= #@.method private static beginShutdownSequence@
-    invoke-static/range {p0 .. p0}, Lcom/android/server/power/ShutdownThread$FlymeInjector;->showShutDownAnimation(Landroid/content/Context;)V
->>>>>>> BOSP #Conflict 0
 
     invoke-virtual {v3, v4}, Landroid/view/Window;->setType(I)V
 

@@ -4929,9 +4929,8 @@
     :goto_5
     if-eqz v11, :cond_15
 
-<<<<<<< VENDOR #Conflict 0
     move-object/from16 v0, v20
-======= #@.method private startActivityUnchecked@
+
     invoke-static/range {p0 .. p0}, Lcom/android/server/am/ActivityStarter$FlymeInjector;->isFlymeAccessApplication(Lcom/android/server/am/ActivityStarter;)Z
 
     move-result v2
@@ -4939,7 +4938,6 @@
     if-nez v2, :cond_flyme_0
 
     move-object/from16 v0, v16
->>>>>>> BOSP #Conflict 0
 
     iget-object v2, v0, Lcom/android/server/am/ActivityRecord;->task:Lcom/android/server/am/TaskRecord;
 
@@ -5051,15 +5049,11 @@
 
     return v2
 
-<<<<<<< VENDOR #Conflict 1
     :cond_15
     const/16 v16, 0x0
-======= #@.method private startActivityUnchecked@
-    :cond_11
-    :cond_flyme_0
-    const/4 v12, 0x0
->>>>>>> BOSP #Conflict 1
 
+    :cond_flyme_0
+    
     .local v16, "newTask":Z
     move-object/from16 v0, p0
 

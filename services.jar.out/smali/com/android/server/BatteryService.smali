@@ -6,11 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-<<<<<<< VENDOR #Conflict 0
         Lcom/android/server/BatteryService$1;,
-=======
         Lcom/android/server/BatteryService$FlymeInjector;,
->>>>>>> BOSP #Conflict 0
         Lcom/android/server/BatteryService$BatteryListener;,
         Lcom/android/server/BatteryService$BinderService;,
         Lcom/android/server/BatteryService$Led;,
@@ -719,13 +716,12 @@
 
     .line 198
     .end local v0    # "invalidChargerObserver":Landroid/os/UEventObserver;
-<<<<<<< VENDOR #Conflict 1
+    
     :cond_1
-======= #@.method public constructor <init>@
-    :cond_0
+
     invoke-static/range {p0 .. p0}, Lcom/android/server/BatteryService$FlymeInjector;->registerBootCompleted(Lcom/android/server/BatteryService;)V
 
->>>>>>> BOSP #Conflict 1
+
     return-void
 .end method
 
